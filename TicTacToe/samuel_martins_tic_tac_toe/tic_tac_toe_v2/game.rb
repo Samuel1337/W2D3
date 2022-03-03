@@ -38,7 +38,10 @@ class Game
             else
                 switch_turn
             end
-            puts "DRAW"
+            if !@board.empty_positions?
+                @board.print
+                puts "DRAW"
+            end
         end
     end
  
